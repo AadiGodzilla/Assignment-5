@@ -12,7 +12,7 @@ for _ in range(n):
 # User input for 'search_item' to query the list 
 search_item = input("What do you want to search: ").lower()
 # find the position of the element of value 'search_item' in the list and display it using loop and enumerate 
-for index, fruit in fruits:
+for index, fruit in enumerate(fruits):
     if fruit == search_item:
         print(f"'{fruit}' is in {index} position")
         break
