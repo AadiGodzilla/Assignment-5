@@ -11,5 +11,8 @@ for _ in range(n):
 
 # User input for 'search_item' to query the list 
 search_item = input("What do you want to search: ").lower()
-# find the position of the element of value 'search_item' in the list and display it
-print(f"{search_item} is in { fruits.index(search_item)} position",)
+# find the position of the element of value 'search_item' in the list and display it using loop and enumerate 
+for index, fruit in fruits:
+    if fruit == search_item:
+        print(f"'{fruit}' is in {index} position")
+        break
